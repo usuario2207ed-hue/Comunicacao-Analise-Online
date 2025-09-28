@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Análise Online</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div id="info-bar">
+    <span id="local-ip">IP Local: carregando...</span> | 
+    <span id="public-ip">IP Público: carregando...</span> | 
+    <span id="location">Localização: carregando...</span>
+  </div>
+
+  <h1>Comunicação e Análise Online</h1>
+
+  <div class="menu">
+    <button onclick="openPopup('gmail')">Gmail</button>
+    <button onclick="openPopup('emailjs')">EmailJS</button>
+    <button onclick="openPopup('whatsapp')">WhatsApp Web</button>
+    <button onclick="openPopup('githubUser')">GitHub Usuário</button>
+    <button onclick="openPopup('githubPages')">lnstagram Private Page</button>
+    <button onclick="openPopup('tinyurl')">TinyURL</button>
+    <button onclick="openPopup('ipinfo')">IPInfo</button>
+    <button onclick="openPopup('viewdns')">ViewDNS</button>
+    <button onclick="openPopup('browserscan')">Browser Scan PT</button>
+    <button onclick="openPopup('geospy')">GeoSpy PT</button>
+    <button onclick="openPopup('privacynet')">Privacy Analyzer</button>
+    <button onclick="openPopup('aispy')">AI Spy</button>
+    <button onclick="openPopup('cachesleuth')">Cache Sleuth</button>
+    <button onclick="openPopup('maps')">Google Maps Localização</button>
+  </div>
+
+  <div class="popup-overlay" id="popupOverlay">
+    <div class="popup" id="popupContent">
+      <h2 id="popupTitle">Título</h2>
+      <p id="popupDesc">Descrição do serviço...</p>
+      <button class="btn-go" id="popupLink" onclick="">IR</button>
+      <button class="btn-close" onclick="closePopup()">Fechar</button>
+    </div>
+  </div>
+
+  <footer>Desenvolvido por EDCEL-TECH</footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
