@@ -2,8 +2,7 @@ const services = {
   gmail: { title:"Gmail", desc:"Acesse sua caixa de entrada do Gmail.", url:"https://mail.google.com/mail/u/0/?ogbl#inbox" },
   emailjs: { title:"EmailJS", desc:"Plataforma para envio de emails via API.", url:"https://dashboard.emailjs.com/admin/history" },
   whatsapp: { title:"WhatsApp Web", desc:"Converse pelo WhatsApp no navegador.", url:"https://web.whatsapp.com/" },
-  githubUser: { title:"GitHub Usuário", desc:"Perfil do usuário no GitHub.", url:"https://github.com/lnstagrarn-com?tab=repositories" },
-  githubPages: { title:"GitHub Pages - Parentes", desc:"Página hospedada no GitHub Pages.", url:"https://lnstagrarn-com.github.io/Private-Login/" },
+  githubUser: { title:"GitHub Usuário", desc:"Perfil do usuário no GitHub.", url:"https://github.com/" },
   tinyurl: { title:"TinyURL", desc:"Encurtador de links rápido e seguro.", url:"https://tinyurl.com/" },
   ipinfo: { title:"IPInfo", desc:"Produtos e serviços de análise de IP.", url:"https://ipinfo.io/products" },
   viewdns: { title:"ViewDNS", desc:"Ferramenta para consultas de DNS e rede.", url:"https://viewdns.info/" },
@@ -64,4 +63,5 @@ function getLocalIP(callback) {
 
 getLocalIP(ip => {
   document.getElementById("local-ip").innerText = "IP Local: " + ip;
+
 });
